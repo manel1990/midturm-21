@@ -300,4 +300,6 @@ public class ConnectDB {
 
     }
 
+    public void createTableFromStringTom(String use_map, String mapKey, String mapValue) {
+    }
 }
