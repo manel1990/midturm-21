@@ -36,7 +36,7 @@ public class UseMap {
 		}
 		List<String> citiesOfalgeria =new ArrayList<>();
 		citiesOfalgeria.add("alg");
-		citiesOfalgeria.add("ouron");
+		citiesOfalgeria.add("oroun");
 		citiesOfalgeria.add("anaba");
 
 		List<String> citiesOffrance =new ArrayList<>();
