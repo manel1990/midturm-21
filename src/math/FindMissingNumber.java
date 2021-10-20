@@ -14,17 +14,38 @@ public class FindMissingNumber {
 
 
         //implementation ....
-        int total_num;
-        int[] numbers = new int[]{10,2,1,4,5,3,7,8,6};
-        total_num = 10;
-        int expected_num_sum = total_num * ((total_num + 1) / 2);
-        int num_sum = 0;
-        for (int i: numbers) {
-            num_sum += i;
-        }
-        System.out.print( expected_num_sum - num_sum);
-        System.out.print("\n");
+//        int total_num;
+//        int[] numbers = new int[]{10,2,1,4,5,3,7,8,6};
+//        total_num = 10;
+//        int expected_num_sum = total_num * ((total_num + 1) / 2);
+//        int num_sum = 0;
+//        for (int i: numbers) {
+//            num_sum += i;
+//        }
+//        System.out.print( expected_num_sum - num_sum);
+//        System.out.print("\n");
+//
+//
+//
+
+        int[] array = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
+        int n = 10;
+        System.out.println("Missing index number in the given array is: " + FindMissingNumber.missingNumber(array, n));
 
     }
 
+    public static int missingNumber(int[] array, int n) {
+
+        int total = 0;
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += i;
+        }
+
+        for (int i = 0; i < array.length; i++) {
+            total += i;
+
+        }
+        return sum - total;
+    }
 }
