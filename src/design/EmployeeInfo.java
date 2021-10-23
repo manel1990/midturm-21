@@ -59,7 +59,7 @@ public class EmployeeInfo extends EmployeeAbstract implements Employee {
 	 */
 
 	public static double calculateEmployeePension(int salary){
-		EmployeeInfo.salary= salary;
+		EmployeeInfo.= salary;
 		double total=0;
 
         //implementation here...
